@@ -2,6 +2,12 @@
 export default {
   content: [
     "./index.html",
+    "./App.vue",
+    "./*.{vue,js,ts,jsx,tsx}",
+    "./components/**/*.{vue,js,ts,jsx,tsx}",
+    "./views/**/*.{vue,js,ts,jsx,tsx}",
+    "./composables/**/*.{vue,js,ts,jsx,tsx}",
+    "./router/**/*.{vue,js,ts,jsx,tsx}",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   darkMode: "class",
