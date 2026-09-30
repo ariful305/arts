@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Universal Font Enforcement */
+body, button, input, select, textarea, div, p, span, a, label, li, th, td {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .font-serif, .font-serif-brand, .font-headline-lg, .font-headline-md, .font-headline-sm, .font-display-hero {
+  font-family: 'Playfair Display', serif !important;
+}
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined' !important;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
